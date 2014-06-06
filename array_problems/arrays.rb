@@ -5,7 +5,8 @@ module ArrayUtil
   def self.max(array)
     largest = nil
     array.each do |number|
-        largest = number
+      largest ||= number
+      largest = number if number > largest
     end
     largest
   end
