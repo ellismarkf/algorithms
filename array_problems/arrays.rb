@@ -12,6 +12,14 @@ module ArrayUtil
   end
 
   def self.middle_element(array)
+    mid = array.size / 2
+    # if array.size % 2 == 0
+    #   avg_mid = (array[mid-1] + array[mid]) / 2
+    #   array[avg_mid]
+    # else
+    #   array[mid]
+    # end
+    array[mid]
   end
 
   def self.sum_arrays(array1, array2)
